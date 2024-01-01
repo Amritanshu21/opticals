@@ -90,7 +90,7 @@ gap:2px
         /* jab hum text content ko display flex denge to .elem ke elements ko flex krne ke liye wo unki given width ko kam kr dega  aur hum yeh nahi chahte hai to textcontent ko denge flex-wrap:no wrap aur .elem ko denge flex-shrink:0 */
         flex-shrink: 0;
         height: 100%;
-        width: 70%;
+        width: 50%;
         /* background-color: red; */
         display: flex;
         align-items: center;
