@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+#nav-part1{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:2px
+}
+.gola{
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px
+    }
+    #nav-part2 h4{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #nav-part2 h4 span{
+        color: rgba(133, 128, 128, 0.833);
+        margin-left: 15px;
+    }
+    #nav2{
+        height: 70px;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 0 40px;
+    }
+    #nav2 h3{
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    #content{
+        /* humne nav  ko height di hai 80px aur nav2 ko height di hai 70px*/
+        height: calc(100% - 150px);
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+    #text-content{
+        height: 40%;
+        width: 100%;
+        /* background-color: burlywood; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /*         overflow-x: auto; yeh dene se .elem ke neeche ek scroll bar aa jayega */
+    }
+    #text-content::-webkit-scrollbar{
+        /* display: none; */
+        /* isse jo humne scroller banaya hai overflow-x se to wo scroll bar nahi dega lekin tabhi bhi scroll hoga   */
+        background-color: transparent;
+        height: 5px;
+    }
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .elem{
+        /* jab hum text content ko display flex denge to .elem ke elements ko flex krne ke liye wo unki given width ko kam kr dega  aur hum yeh nahi chahte hai to textcontent ko denge flex-wrap:no wrap aur .elem ko denge flex-shrink:0 */
+        flex-shrink: 0;
+        height: 100%;
+        width: 70%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .elem h1{
+        display: flex;
+    font-size: 85px;
+    font-weight: 300;
+    }
+    #image-content{
+        display: flex;
+        height: 60%;
+        width: 100%;
+       background-color: blue;
+       overflow-x: auto;
+    }
+    
+    #image-content img{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+    @media (max-width:600px) {
+        #main{
+            height: 100%;
+            width: 100%;
+            /* background-color: blue; */
+        }
+        #nav{
+            height: 80px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        #nav-part1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        }
+        .gola{
+            height: 22px;
+            width: 22px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        #nav-part2{
+            margin-left: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:15px
+            }
+            #nav-part2 h4{
+                font-size: 3vw;
+                font-weight: 500;
+            }
+            #Russia{
+                display: none;
+            }
+            #nav-part2 h4 span{
+                color: rgba(133, 128, 128, 0.833);
+                margin-left: 15px;
+            }
+            #nav2{
+                height: 70px;
+                width: 100%;
+                /* background-color: red; */
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                padding: 0 40px;
+                /* display: none; */
+            }
+            #nav2 h3{
+                font-size: 2vw;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+            #shops{
+                display: none;
+            }
+            #journal{
+                display: none;
+            }
+            #content{
+                /* humne nav  ko height di hai 80px aur nav2 ko height di hai 70px*/
+                height: calc(100% - 150px);
+                width: 100%;
+                /* background-color: aquamarine; */
+            }
+            #text-content{
+                height: 40%;
+                width: 100%;
+                /* background-color: burlywood; */
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                /*         overflow-x: auto; yeh dene se .elem ke neeche ek scroll bar aa jayega */
+            }
+            #text-content::-webkit-scrollbar{
+                /* display: none; */
+                /* isse jo humne scroller banaya hai overflow-x se to wo scroll bar nahi dega lekin tabhi bhi scroll hoga   */
+                background-color: transparent;
+                height: 5px;
+            }
+            #text-content::-webkit-scrollbar-thumb{
+                background-color: orangered;
+            }
+            .elem{
+                /* jab hum text content ko display flex denge to .elem ke elements ko flex krne ke liye wo unki given width ko kam kr dega  aur hum yeh nahi chahte hai to textcontent ko denge flex-wrap:no wrap aur .elem ko denge flex-shrink:0 */
+                flex-shrink: 0;
+                height: 100%;
+                width: 90%;
+                /* background-color: red; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+        
+            }
+            .elem h1{
+                display: flex;
+            font-size:12vw;
+            font-weight: 400;
+            }
+            #image-content{
+                display: flex;
+                height: 60%;
+                width: 100%;
+               background-color: blue;
+               overflow-x: auto;
+            }
+            
+            #image-content img{
+                flex-shrink: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            #image-content::-webkit-scrollbar{
+                display: none;
+            }
+    }
