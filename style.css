@@ -250,3 +250,52 @@ gap:2px
                 display: none;
             }
     }
+@media (max-width:390px){
+        #search{
+   display:none;
+        }
+        #nav-part2{
+            margin-left: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px
+            }
+            #nav-part2 h4{
+                font-size: 3vw;
+                font-weight: 900;
+            }
+            #nav2{
+                
+                height: 70px;
+                width: 100%;
+                /* background-color: red; */
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                padding: 0 40px;
+                /* display: none; */
+            }
+            #nav2 h3{
+                font-size: 2.2vw;
+                font-weight: 1000;
+                text-transform: uppercase;
+            }
+            .elem{
+                /* jab hum text content ko display flex denge to .elem ke elements ko flex krne ke liye wo unki given width ko kam kr dega  aur hum yeh nahi chahte hai to textcontent ko denge flex-wrap:no wrap aur .elem ko denge flex-shrink:0 */
+                flex-shrink: 0;
+                height: 100%;
+                width: 90%;
+                /* background-color: red; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+        
+            }
+            .elem h1{
+                display: flex;
+            font-size:12vw;
+            font-weight: 600;
+            }
+    }
